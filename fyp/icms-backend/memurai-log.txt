@@ -1,0 +1,25 @@
+[4744] 29 Apr 02:29:10.757 * 1 changes in 3600 seconds. Saving...
+[4744] 29 Apr 02:29:10.790 * Background saving started by pid 3988
+[3988] 29 Apr 02:29:11.160 * DB saved on disk
+[4744] 29 Apr 02:29:11.247 * Background saving terminated with success
+[4744] 29 Apr 05:56:05.612 * 1 changes in 3600 seconds. Saving...
+[4744] 29 Apr 05:56:05.619 * Background saving started by pid 8664
+[8664] 29 Apr 05:56:07.396 * DB saved on disk
+[4744] 29 Apr 05:56:07.821 * Background saving terminated with success
+[4744] 04 May 00:15:40.006 * 1 changes in 3600 seconds. Saving...
+[4744] 04 May 00:15:40.062 * Background saving started by pid 13616
+[13616] 04 May 00:15:40.479 * DB saved on disk
+[4744] 04 May 00:15:40.637 * Background saving terminated with success
+[4744] 04 May 04:06:25.535 * 1 changes in 3600 seconds. Saving...
+[4744] 04 May 04:06:27.317 * Background saving started by pid 28060
+[28060] 04 May 04:06:31.130 * DB saved on disk
+[4744] 04 May 04:06:31.267 * Background saving terminated with success
+[4744] 04 May 11:16:18.765 * 1 changes in 3600 seconds. Saving...
+[4744] 04 May 11:16:18.832 * Background saving started by pid 31384
+[31384] 04 May 11:16:19.474 * DB saved on disk
+[4744] 04 May 11:16:19.606 * Background saving terminated with success
+[4744] 04 May 11:46:06.139 * Service stopping
+[4744] 04 May 11:46:06.197 * User requested shutdown...
+[4744] 04 May 11:46:06.197 * Saving the final RDB snapshot before exiting.
+[4744] 04 May 11:46:06.202 * DB saved on disk
+[4744] 04 May 11:46:10.687 # Memurai is now ready to exit, bye bye...

@@ -1,0 +1,139 @@
+# ============================================================================
+# ICMS (Intelligent Cleaning and Model Selection System) Backend
+# Python Dependencies and Requirements
+# ============================================================================
+# Generated: 2024
+# Python Version: 3.11+
+# ============================================================================
+
+# ============================================================================
+# WEB FRAMEWORK & HTTP
+# ============================================================================
+# FastAPI: Modern Python web framework for building APIs
+fastapi[standard]>=0.115.0
+
+# Uvicorn: ASGI web server for running FastAPI
+uvicorn[standard]>=0.32.0
+
+# python-multipart: Support for multipart file uploads
+python-multipart>=0.0.9
+
+# pydantic-settings: Environment variable and settings management
+pydantic-settings>=2.6.0
+
+# email-validator: Email validation for Pydantic models
+email-validator>=2.2.0
+
+# ============================================================================
+# AUTHENTICATION & SECURITY
+# ============================================================================
+# python-jose: JSON Web Token (JWT) implementation
+python-jose[cryptography]>=3.3.0
+
+# bcrypt: Password hashing for secure user authentication
+bcrypt>=4.1.0
+
+# ============================================================================
+# DATABASE & ORM
+# ============================================================================
+# SQLAlchemy: Object-relational mapping (ORM) for database management
+sqlalchemy>=2.0.36
+
+# psycopg2-binary: PostgreSQL adapter for Python (binary distribution)
+psycopg2-binary>=2.9.10
+
+# Alembic: Database migration management tool for SQLAlchemy
+alembic>=1.14.0
+
+# ============================================================================
+# ASYNCHRONOUS TASK QUEUE
+# ============================================================================
+# Celery: Distributed task queue for long-running ML jobs
+celery[redis]>=5.4.0
+
+# Redis: In-memory data store for Celery broker and result backend
+redis>=5.2.0
+
+# ============================================================================
+# DATA PROCESSING & MANIPULATION
+# ============================================================================
+# pandas: Data manipulation and analysis library
+pandas>=2.2.0
+
+# numpy: Numerical computing library for arrays and matrices
+numpy>=2.0.0
+
+# ============================================================================
+# MACHINE LEARNING & MODEL TRAINING
+# ============================================================================
+# scikit-learn: Machine learning algorithms and preprocessing
+scikit-learn>=1.5.0
+
+# XGBoost: Gradient boosting framework for tree-based models
+xgboost>=2.1.0
+
+# LightGBM: Fast gradient boosting implementation
+lightgbm>=4.5.0
+
+# SHAP: SHapley Additive exPlanations for model interpretability
+shap>=0.46.0
+
+# joblib: Serialization of Python objects for model persistence
+joblib>=1.4.0
+
+# ============================================================================
+# DATA FORMAT SUPPORT
+# ============================================================================
+# openpyxl: Excel file format support (.xlsx)
+openpyxl>=3.1.0
+
+# ============================================================================
+# VISUALIZATION & CHARTING
+# ============================================================================
+# plotly: Interactive visualization library for charts and plots
+plotly>=5.24.0
+
+# ============================================================================
+# UTILITIES & HTTP CLIENT
+# ============================================================================
+# httpx: Modern async/sync HTTP client library
+httpx>=0.27.0
+
+# ============================================================================
+# DEVELOPMENT & OPTIONAL DEPENDENCIES
+# ============================================================================
+# Note: These are optional and used for development/testing
+# Uncomment as needed:
+
+# pytest>=7.0.0  # Testing framework
+# pytest-cov>=4.0.0  # Code coverage reporting
+# black>=23.0.0  # Code formatter
+# flake8>=6.0.0  # Code linter
+# mypy>=1.0.0  # Static type checker
+# python-dotenv>=1.0.0  # Load environment variables from .env file
+
+# ============================================================================
+# IMPORTANT NOTES
+# ============================================================================
+# 1. Database Configuration:
+#    - PostgreSQL recommended for production
+#    - SQLite supported for local development
+#    - Set DATABASE_URL environment variable
+
+# 2. Cache/Queue Configuration:
+#    - Redis required for Celery task queue
+#    - Set REDIS_URL, CELERY_BROKER_URL, CELERY_RESULT_BACKEND env vars
+#    - Use Memurai (Windows) or redis-server (Linux)
+
+# 3. ML Model Considerations:
+#    - SHAP computation is conditional (only for test sets <= 10k samples)
+#    - Large datasets automatically sampled to 50k rows max
+#    - EDA output truncated to 300k chars for JSON efficiency
+
+# 4. Installation:
+#    pip install -r requirements.txt
+
+# 5. Virtual Environment:
+#    python -m venv .venv
+#    .venv\Scripts\activate  # Windows
+#    source .venv/bin/activate  # Linux/Mac
